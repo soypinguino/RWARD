@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RWARD</title>
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- ===================== CABEZA DE TODO ===================== -->
+
+<header id="encabezado">
+  <div class="encabezado__contenedor">
+    <div class="encabezado__logo">
+      <img src="img/logo.png">
+        <span>RWARD</span>
+    </div>
+
+
+<nav class="navegacion-principal">
+    <a href="index.html" class="activo">Inicio</a>
+    <a href="tienda.html">Tienda</a>
+</nav>
+
+
+    <div class="encabezado__acciones">
+
+<!-- ===================================================== icono de búsqueda ===================== -->
+      <svg class="icono-accion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+
+<!-- ===================================================== icono de carrito ===================== -->
+      <svg class="icono-accion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+
+<!-- ===================================================== icono de perfil ===================== -->
+      <svg class="icono-accion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+      </svg>
+
+    </div>
+  </div>
+</header>
+
+
+<!-- ===================== CONTENIDO ===================== -->
+
+
+<main class="contenido-demo">
+
+<!-- ===================== CARRUSEL DE OFERTAS ===================== -->
+<section class="carrusel-ofertas animar-aparicion" id="carruselOfertas">
+  <div class="carrusel-ofertas__viewport">
+
+    <div class="carrusel-ofertas__pista" id="carruselPista">
+
+      <div class="carrusel-ofertas__slide" style="background-image:url('img/Banner_diamantes.webp')">
+        <div class="carrusel-ofertas__overlay"></div>
+        <div class="carrusel-ofertas__contenido">
+          <span class="carrusel-ofertas__etiqueta">OFERTA DEL DÍA</span>
+          <h2>+10% de bono en tu recarga</h2>
+          <p>Aprovecha el bono extra en todas tus recargas de hoy.</p>
+          <a href="garena-free-fire.html" class="carrusel-ofertas__boton">Ver oferta</a>
+        </div>
+      </div>
+
+      <div class="carrusel-ofertas__slide" style="background-image:url('img/banner steam.webp')">
+        <div class="carrusel-ofertas__overlay"></div>
+        <div class="carrusel-ofertas__contenido">
+          <span class="carrusel-ofertas__etiqueta">NUEVO</span>
+          <h2>Tarjetas de regalo disponibles</h2>
+          <p>Encuentra las mejores tarjetas para tus juegos favoritos.</p>
+          <a href="steam.html" class="carrusel-ofertas__boton">Explorar</a>
+        </div>
+      </div>
+
+      <div class="carrusel-ofertas__slide" style="background-image:url('img/banner xbox.png')">
+        <div class="carrusel-ofertas__overlay"></div>
+        <div class="carrusel-ofertas__contenido">
+          <span class="carrusel-ofertas__etiqueta">SITIO OFICIAL</span>
+          <h2>Recarga segura y al instante</h2>
+          <p>Compra con confianza en la tienda oficial de recargas.</p>
+          <a href="xbox.html" class="carrusel-ofertas__boton">Comprar ahora</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carrusel-ofertas__flecha carrusel-ofertas__flecha--anterior" id="flechaAnterior" aria-label="Anterior">‹</button>
+    <button class="carrusel-ofertas__flecha carrusel-ofertas__flecha--siguiente" id="flechaSiguiente" aria-label="Siguiente">›</button>
+
+  </div>
+
+  <div class="carrusel-ofertas__indicadores" id="carruselIndicadores"></div>
+</section>
+
+<!-- ===================== TARJETAS DE TIENDA ONLINE ===================== -->
+<section class="tarjetas-seccion">
+  <h2 class="tarjetas-titulo animar-aparicion">Nuestros productos</h2>
+  <p class="animar-aparicion">Descubre las mejores ofertas y promociones en nuestra tienda online.</p>
+
+  <div class="tarjetas-carrusel">
+    <button class="tarjetas-flecha tarjetas-flecha--anterior" id="tarjetasAnterior" aria-label="Anterior">‹</button>
+
+    <div class="tarjetas-carrusel__viewport">
+      <div class="tarjetas-carrusel__pista">
+
+        <a href="steam.html" class="tarjeta-producto animar-aparicion">
+          <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+            <img src="img/STEAM-LOGO.webp" alt="Steam">
+          </div>
+          <div class="tarjeta-producto__info">
+            <h3>Steam</h3>
+            <span>Perú</span>
+          </div>
+        </a>
+
+        <a href="nintendo.html" class="tarjeta-producto animar-aparicion">
+          <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+            <img src="img/Nintendo.jpg" alt="Nintendo">
+          </div>
+          <div class="tarjeta-producto__info">
+            <h3>Nintendo</h3>
+            <span>Perú</span>
+          </div>
+        </a>
+
+        <a href="garena-free-fire.html" class="tarjeta-producto animar-aparicion">
+          <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+            <img src="img/ganera.avif" alt="garena_free_fire">
+          </div>
+          <div class="tarjeta-producto__info">
+            <h3>Garena Free Fire</h3>
+            <span>Perú</span>
+          </div>
+        </a>
+
+        <a href="psn.html" class="tarjeta-producto animar-aparicion">
+          <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+            <img src="img/PSN-Cards.jpg" alt="PSN Cards">
+          </div>
+          <div class="tarjeta-producto__info">
+            <h3>PSN Cards</h3>
+            <span>Perú</span>
+          </div>
+        </a>
+
+        <a href="xbox.html" class="tarjeta-producto animar-aparicion">
+          <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+            <img src="img/Xbox-GamePass-Ultimate.jpg" alt="Xbox Game Pass Ultimate">
+          </div>
+          <div class="tarjeta-producto__info">
+            <h3>Xbox Game Pass Ultimate</h3>
+            <span>Perú</span>
+          </div>
+        </a>
+
+        <a href="psn-plus.html" class="tarjeta-producto animar-aparicion">
+          <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+            <img src="img/PSN-Plus.jpg" alt="PSN Plus">
+          </div>
+          <div class="tarjeta-producto__info">
+            <h3>PSN Plus</h3>
+            <span>Perú</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <button class="tarjetas-flecha tarjetas-flecha--siguiente" id="tarjetasSiguiente" aria-label="Siguiente">›</button>
+  </div>
+</section>
+</main>
+
+
+<!-- ===================== CONTENIDO OFERTAS ===================== -->
+<main class="contenido-demo">
+  <h1 class="animar-aparicion">No te pierdas nuestras ofertas exclusivas</h1>
+
+  <p class="animar-aparicion">Descubre las mejores ofertas y promociones en nuestra tienda online.</p>
+
+  <div class="grilla-productos">
+
+    <div class="tarjeta-producto animar-aparicion">
+      <a href="steam.html" class="tarjeta-producto__enlace">
+        <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+          <img src="img/Steam-50so.webp" alt="Steam">
+        </div>
+        <div class="tarjeta-producto__info">
+          <h3>Steam</h3>
+          <span class="tarjeta-producto__pais">Perú</span>
+
+          <div class="tarjeta-producto__precios">
+            <span class="tarjeta-producto__precio-anterior">S/50.00</span>
+            <span class="tarjeta-producto__precio-actual">S/49.90</span>
+          </div>
+          <a href="steam.html" class="tarjeta-producto__boton">comprar ahora</a>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="tarjeta-producto animar-aparicion">
+      <a href="xbox-gamepass-ultimate.html" class="tarjeta-producto__enlace">
+        <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+          <img src="img/Xbox-Game-Pass-Ultimate-3-Meses.webp" alt="Xbox Game Pass Ultimate">
+        </div>
+        <div class="tarjeta-producto__info">
+          <h3>Xbox Game Pass Ultimate</h3>
+          <span class="tarjeta-producto__pais">Perú</span>
+
+          <div class="tarjeta-producto__precios">
+            <span class="tarjeta-producto__precio-anterior">S/115.00</span>
+            <span class="tarjeta-producto__precio-actual">S/109.99</span>
+          </div>
+          <a href="xbox.html" class="tarjeta-producto__boton">comprar ahora</a>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="tarjeta-producto animar-aparicion">
+      <a href="nintendo-gift-card.html" class="tarjeta-producto__enlace">
+        <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+          <img src="img/Nintendo-Gift-Card-35.webp" alt="Nintendo Gift Card">
+        </div>
+        <div class="tarjeta-producto__info">
+          <h3>Nintendo Gift Card</h3>
+          <span class="tarjeta-producto__pais">Perú</span>
+
+          <div class="tarjeta-producto__precios">
+            <span class="tarjeta-producto__precio-anterior">S/115.00</span>
+            <span class="tarjeta-producto__precio-actual">S/109.99</span>
+          </div>
+          <a href="nintendo.html" class="tarjeta-producto__boton">comprar ahora</a>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="tarjeta-producto animar-aparicion">
+      <a href="psn.html" class="tarjeta-producto__enlace">
+        <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+          <img src="img/PSN-Card-30so.webp" alt="PSN Cards">
+        </div>
+        <div class="tarjeta-producto__info">
+          <h3>PSN Cards</h3>
+          <span class="tarjeta-producto__pais">Perú</span>
+
+          <div class="tarjeta-producto__precios">
+            <span class="tarjeta-producto__precio-anterior">S/115.00</span>
+            <span class="tarjeta-producto__precio-actual">S/109.99</span>
+          </div>
+          <a href="psn-cards-30.html" class="tarjeta-producto__boton">comprar ahora</a>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="tarjeta-producto animar-aparicion">
+      <a href="psn.html" class="tarjeta-producto__enlace">
+        <div class="tarjeta-producto__imagen-contenedor zoom-al-pasar">
+          <img src="img/PSN-Card-50so.webp" alt="PSN Cards">
+        </div>
+        <div class="tarjeta-producto__info">
+          <h3>PSN Cards</h3>
+          <span class="tarjeta-producto__pais">Perú</span>
+
+          <div class="tarjeta-producto__precios">
+            <span class="tarjeta-producto__precio-anterior">S/115.00</span>
+            <span class="tarjeta-producto__precio-actual">S/109.99</span>
+          </div>
+          <a href="psn-cards-50.html" class="tarjeta-producto__boton">comprar ahora</a>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+
+<!-- ===================== PIE DE PÁGINA ===================== -->
+<footer id="pie-pagina">
+  <div class="pie-pagina__contenedor">
+
+    <div class="columna-pie animar-aparicion">
+      <h4>Acerca de RWARD</h4>
+      <p>RWARD es una tienda online especializada en recargas de juegos y tarjetas de regalo a nivel global.</p>
+      <div class="columna-pie__logo zoom-al-pasar">
+        <img src="img/logo.png" alt="Logo RWARD">
+        RWARD
+      </div>
+    </div>
+
+    <div class="columna-pie animar-aparicion">
+      <h4>Enlaces Rápidos</h4>
+      <a href="tienda.html">Tienda</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos de Servicio</a>
+    </div>
+
+    <div class="columna-pie animar-aparicion">
+      <h4>Mi Cuenta</h4>
+      <a href="#">Mi Carrito</a>
+      <a href="#">Pedidos</a>
+    </div>
+
+    <div class="columna-pie animar-aparicion">
+      <h4>¿Necesitas ayuda? Contáctanos</h4>
+      <p>Teléfono<br>(+51) 999-999-999<br>(+51) 999-999-999</p>
+      <p>Correo Electrónico<br>soporte@storeplay.com</p>
+      <p>Ubicación<br>Perú</p>
+    </div>
+
+  </div>
+
+  <div class="pie-pagina__linea"></div>
+
+  <div class="pie-pagina__inferior animar-aparicion">
+<div class="metodos-pago">
+  <span><img src="img/Visa-Logo-2005.jpg" alt="VISA"></span>
+  <span><img src="img/Master card.png" alt="Mastercard"></span>
+</div>
+    <div class="derechos-autor">Copyright © 2026 StorePlay. Reservados todos los derechos</div>
+<div class="redes-sociales">
+  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+  <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

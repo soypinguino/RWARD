@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RWARD</title>
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- ===================== CABEZA DE TODO ===================== -->
+<header id="encabezado">
+  <div class="encabezado__contenedor">
+    <div class="encabezado__logo">
+      <img src="img/logo.png">
+        <span>RWARD</span>
+    </div>
+
+
+<nav class="navegacion-principal">
+    <a href="index.html" class="activo">Inicio</a>
+    <a href="tienda.html">Tienda</a>
+</nav>
+
+
+    <div class="encabezado__acciones">
+
+<!-- ===================================================== icono de búsqueda ===================== -->
+      <svg class="icono-accion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+
+<!-- ===================================================== icono de carrito ===================== -->
+      <svg class="icono-accion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+
+<!-- ===================================================== icono de perfil ===================== -->
+      <svg class="icono-accion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+      </svg>
+
+    </div>
+  </div>
+</header>
+
+<!-- ===================== CABECERA DEL PRODUCTO ===================== -->
+<section class="producto-cabecera">
+  <div class="producto-cabecera__contenedor">
+
+    <img src="img/logo-steam.png" alt="Steam" class="producto-cabecera__imagen">
+
+    <div class="producto-cabecera__info">
+      <h1>Steam</h1>
+
+      <div class="producto-cabecera__meta">
+        <span class="producto-cabecera__region">Perú</span>
+
+        <span class="producto-cabecera__dato">
+          <i class="fa-solid fa-house"></i> pago seguro
+        </span>
+
+        <span class="producto-cabecera__dato">
+          <i class="fa-solid fa-bolt"></i> Entrega Instantánea
+        </span>
+      </div>
+    </div>
+
+    <button class="producto-cabecera__favorito" id="btnFavorito">
+      <i class="fa-regular fa-heart"></i> Agregar a Favoritos
+    </button>
+
+  </div>
+</section>
+
+<!-- ===================================================== COPRA SERIA ===================== -->
+<main class="pagina-recarga">
+  <div class="recarga-layout">
+
+    <div class="recarga-productos">
+
+      <div class="recarga-grid" id="recargaGrid">
+
+        <button class="recarga-item" data-precio="9.99" data-nombre="Diamantes 310 + 31 Bonus">
+          <img src="img/Steam-50so.webp" alt="" class="recarga-item__icono">
+          <span class="recarga-item__nombre">steam 10 soles</span>
+          <span class="recarga-item__precio">USD 9.99</span>
+        </button>
+
+        <button class="recarga-item" data-precio="49.00" data-nombre="Diamantes 100 + 10 Bonus">
+          <img src="img/Steam-50so.webp" alt="" class="recarga-item__icono">
+          <span class="recarga-item__nombre">steam 50 soles</span>
+          <span class="recarga-item__precio">USD 49.00</span>
+        </button>
+
+        <button class="recarga-item" data-precio="99.99" data-nombre="Diamantes 520 + 52 Bonus">
+          <img src="img/Steam-50so.webp" alt="" class="recarga-item__icono">
+          <span class="recarga-item__nombre">steam 100 soles</span>
+          <span class="recarga-item__precio">USD 99.99</span>
+        </button>
+
+      </div>
+
+      <div class="recarga-guia">
+        <h4>Guía de Uso</h4>
+        <ol>
+          <li>Inicia sesión en tu cuenta de Steam.</li>
+          <li>Ve a la página Canjear un código de la cartera de Steam.</li>
+          <li>Haz clic en "Canjear una tarjeta de regalo o un código de cartera de Steam"</li>
+          <li>Introduce el código de la cartera de Steam.</li>
+          <li>Los fondos serán añadidos a la billetera Steam.</li>
+        </ol>
+      </div>
+
+    </div>
+
+    <aside class="recarga-resumen">
+
+      <div class="recarga-resumen__caja">
+        <div class="recarga-resumen__total">
+          <span>Total</span>
+          <span id="totalRecarga">USD 0.00</span>
+        </div>
+
+        <button class="recarga-resumen__comprar" id="btnComprar">Comprar Ahora</button>
+      </div>
+
+    </aside>
+
+  </div>
+</main>
+
+<!-- ===================== PIE DE PÁGINA ===================== -->
+<footer id="pie-pagina">
+  <div class="pie-pagina__contenedor">
+
+    <div class="columna-pie animar-aparicion">
+      <h4>Acerca de RWARD</h4>
+      <p>RWARD es una tienda online especializada en recargas de juegos y tarjetas de regalo a nivel global.</p>
+      <div class="columna-pie__logo zoom-al-pasar">
+        <img src="img/logo.png" alt="Logo RWARD">
+        RWARD
+      </div>
+    </div>
+
+    <div class="columna-pie animar-aparicion">
+      <h4>Enlaces Rápidos</h4>
+      <a href="tienda.html">Tienda</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos de Servicio</a>
+    </div>
+
+    <div class="columna-pie animar-aparicion">
+      <h4>Mi Cuenta</h4>
+      <a href="#">Mi Carrito</a>
+      <a href="#">Pedidos</a>
+    </div>
+
+    <div class="columna-pie animar-aparicion">
+      <h4>¿Necesitas ayuda? Contáctanos</h4>
+      <p>Teléfono<br>(+51) 999-999-999<br>(+51) 999-999-999</p>
+      <p>Correo Electrónico<br>soporte@storeplay.com</p>
+      <p>Ubicación<br>Perú</p>
+    </div>
+
+  </div>
+
+  <div class="pie-pagina__linea"></div>
+
+  <div class="pie-pagina__inferior animar-aparicion">
+<div class="metodos-pago">
+  <span><img src="img/Visa-Logo-2005.jpg" alt="VISA"></span>
+  <span><img src="img/Master card.png" alt="Mastercard"></span>
+</div>
+    <div class="derechos-autor">Copyright © 2026 StorePlay. Reservados todos los derechos</div>
+<div class="redes-sociales">
+  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+  <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
